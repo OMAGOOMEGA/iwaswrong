@@ -1,83 +1,363 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pritam Pal - CV</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pritam Pal - CV</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#eef2f7;
+    color:#333;
+    line-height:1.6;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    padding:45px 50px;
+}
+
+.header h1{
+    font-size:42px;
+    margin-bottom:8px;
+    letter-spacing:1px;
+}
+
+.header h3{
+    font-weight:400;
+    opacity:0.95;
+}
+
+.contact{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    font-size:15px;
+}
+
+.contact a{
+    color:#fff;
+    text-decoration:none;
+}
+
+/* CONTENT */
+
+.content{
+    padding:40px 50px;
+}
+
+.section{
+    margin-bottom:35px;
+}
+
+.section-title{
+    font-size:24px;
+    color:#1e3c72;
+    margin-bottom:18px;
+    position:relative;
+    padding-left:15px;
+}
+
+.section-title::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:5px;
+    width:5px;
+    height:28px;
+    background:#2a5298;
+    border-radius:10px;
+}
+
+/* SUMMARY */
+
+.summary p{
+    margin-bottom:10px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.skill-card{
+    background:#f5f8fc;
+    padding:15px;
+    border-radius:12px;
+    border-left:5px solid #2a5298;
+    transition:0.3s ease;
+}
+
+.skill-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* EXPERIENCE */
+
+.job{
+    background:#f8fbff;
+    padding:22px;
+    border-radius:14px;
+    margin-bottom:18px;
+    border:1px solid #dce7f5;
+}
+
+.job h3{
+    color:#1e3c72;
+    margin-bottom:12px;
+}
+
+.job ul{
+    padding-left:20px;
+}
+
+.job li{
+    margin-bottom:10px;
+}
+
+/* EDUCATION */
+
+.education-box{
+    background:#f5f8fc;
+    padding:20px;
+    border-radius:12px;
+    border-left:5px solid #2a5298;
+}
+
+/* LANGUAGES */
+
+.languages{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.language{
+    background:#2a5298;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#f2f5fa;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+    color:#666;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header,
+    .content{
+        padding:30px 25px;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
+
+    .header h1{
+        font-size:32px;
     }
-    .section {
-      margin-bottom: 30px;
-    }
-    .contact {
-      background: #eaeaea;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    ul {
-      list-style-type: square;
-      margin-left: 20px;
-    }
-  </style>
+
+}
+
+</style>
 </head>
+
 <body>
-  <h1>Pritam Pal</h1>
-  <h3>Designer - Control & Instrumentation</h3>
 
-  <div class="contact">
-    <p>Email: <a href="mailto:pritampal8927@gmail.com">pritampal8927@gmail.com</a></p>
-    <p>Phone: +91 89613 74818</p>
-  </div>
+<div class="container">
 
-  <div class="section">
-    <h2>Summary</h2>
-    <p>3 years of experience at Wood India Engineering & Projects Pvt. Ltd.</p>
-    <p>Industries: Oil & Gas, Chemical, Mining & Minerals</p>
-    <p>Expertise: Front End Engineering, Detailed Engineering, EPCM</p>
-  </div>
+    <!-- HEADER -->
 
-  <div class="section">
-    <h2>Education</h2>
-    <p>Diploma in Electronics and Telecommunication Engineering (1st Class)  
-    Ramakrishna Mission Shilpamandira, Belur Math, Howrah, India</p>
-  </div>
+    <div class="header">
+        <h1>Pritam Pal</h1>
+        <h3>Designer – Control & Instrumentation</h3>
 
-  <div class="section">
-    <h2>Software / Skills</h2>
-    <ul>
-      <li>Smart Plant 3D, Smart Sketch, Smart Plant Review</li>
-      <li>Navisworks Freedom & Simulate</li>
-      <li>Smart Plant Instrumentation (SPI)</li>
-      <li>AVEVA Everything 3D</li>
-      <li>MicroStation V8i, AutoCAD 2D & 3D</li>
-      <li>Blue Beam Revu, MS Office 365 Copilot</li>
-      <li>MS Excel Macro/VBA, Pipedata-Pro</li>
-    </ul>
-  </div>
+        <div class="contact">
+            <div>📧 <a href="mailto:pritampal8927@gmail.com">pritampal8927@gmail.com</a></div>
+            <div>📞 +91 89613 74818</div>
+        </div>
+    </div>
 
-  <div class="section">
-    <h2>Languages</h2>
-    <p>English, Bengali, Hindi</p>
-  </div>
+    <!-- CONTENT -->
 
-  <div class="section">
-    <h2>Experience</h2>
-    <h3>Wood India Engineering & Projects Pvt. Ltd.</h3>
-    <ul>
-      <li>ADNOC HABSHAN DBN EPCm, Abu Dhabi – Hook-up drawings, instrument layouts, trench routing, bulk material take-offs.</li>
-      <li>ExxonMobil ANT BT6, Antwerp – As-built instrumentation docs, cable routing, alarm layouts.</li>
-      <li>OMV Petrom SAF HVO, Romania – Cable tray routing, hook-up drawings, JB wiring diagrams, interdisciplinary reviews.</li>
-      <li>HRRL DWST Package-7A, India – Instrument modelling, F&G layouts, hook-up drawings, cable schedules, BOMs.</li>
-      <li>EVONIK SIS Project, Singapore – Instrumentation deliverables, JB grouping, bulk material take-offs.</li>
-      <li>Other EPCm projects in Portugal, Uzbekistan, Belgium.</li>
-    </ul>
-  </div>
+    <div class="content">
+
+        <!-- SUMMARY -->
+
+        <div class="section summary">
+            <h2 class="section-title">Professional Summary</h2>
+
+            <p>
+                Experienced Control & Instrumentation Designer with 3 years of experience 
+                in EPCM projects across Oil & Gas, Chemical, Mining & Minerals industries.
+            </p>
+
+            <p>
+                Skilled in Front-End Engineering, Detailed Engineering, Instrumentation 
+                Layouts, Cable Routing, Hook-up Drawings, 3D Modelling, and 
+                Interdisciplinary Coordination.
+            </p>
+        </div>
+
+        <!-- EDUCATION -->
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-box">
+                <h3>Diploma in Electronics & Telecommunication Engineering</h3>
+                <p>Ramakrishna Mission Shilpamandira, Belur Math, Howrah, India</p>
+                <p><strong>Result:</strong> First Class</p>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+
+        <div class="section">
+            <h2 class="section-title">Software & Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    SmartPlant 3D, Smart Sketch, SmartPlant Review
+                </div>
+
+                <div class="skill-card">
+                    SmartPlant Instrumentation (SPI)
+                </div>
+
+                <div class="skill-card">
+                    AVEVA Everything 3D (E3D)
+                </div>
+
+                <div class="skill-card">
+                    Navisworks Freedom & Simulate
+                </div>
+
+                <div class="skill-card">
+                    AutoCAD 2D & 3D, MicroStation V8i
+                </div>
+
+                <div class="skill-card">
+                    Bluebeam Revu, MS Office 365 Copilot
+                </div>
+
+                <div class="skill-card">
+                    MS Excel Macro / VBA
+                </div>
+
+                <div class="skill-card">
+                    Pipedata-Pro
+                </div>
+
+            </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="job">
+                <h3>Wood India Engineering & Projects Pvt. Ltd.</h3>
+
+                <ul>
+
+                    <li>
+                        <strong>ADNOC HABSHAN DBN EPCm, Abu Dhabi</strong><br>
+                        Hook-up drawings, instrument layouts, trench routing, 
+                        bulk material take-offs.
+                    </li>
+
+                    <li>
+                        <strong>ExxonMobil ANT BT6, Antwerp</strong><br>
+                        As-built instrumentation documentation, cable routing, 
+                        alarm layouts.
+                    </li>
+
+                    <li>
+                        <strong>OMV Petrom SAF HVO, Romania</strong><br>
+                        Cable tray routing, hook-up drawings, JB wiring diagrams, 
+                        interdisciplinary reviews.
+                    </li>
+
+                    <li>
+                        <strong>HRRL DWST Package-7A, India</strong><br>
+                        Instrument modelling, F&G layouts, hook-up drawings, 
+                        cable schedules, BOM generation.
+                    </li>
+
+                    <li>
+                        <strong>EVONIK SIS Project, Singapore</strong><br>
+                        Instrumentation deliverables, JB grouping, 
+                        bulk material take-offs.
+                    </li>
+
+                    <li>
+                        Worked on additional EPCm projects across Portugal, 
+                        Uzbekistan, and Belgium.
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- LANGUAGES -->
+
+        <div class="section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages">
+                <div class="language">English</div>
+                <div class="language">Bengali</div>
+                <div class="language">Hindi</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        © 2026 Pritam Pal | Control & Instrumentation Designer
+    </div>
+
+</div>
+
 </body>
 </html>
+```
