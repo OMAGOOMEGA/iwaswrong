@@ -1,10 +1,10 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pritam Pal - CV</title>
+<title>Pritam Pal - Professional CV</title>
 
 <style>
 
@@ -15,7 +15,7 @@
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI',sans-serif;
     background:#eef2f7;
     color:#333;
     line-height:1.6;
@@ -23,9 +23,9 @@ body{
 }
 
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    background:white;
+    background:#fff;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 10px 35px rgba(0,0,0,0.12);
@@ -34,15 +34,15 @@ body{
 /* HEADER */
 
 .header{
-    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     color:white;
-    padding:45px 50px;
+    padding:45px 55px;
 }
 
 .header h1{
     font-size:42px;
-    margin-bottom:8px;
     letter-spacing:1px;
+    margin-bottom:8px;
 }
 
 .header h3{
@@ -54,64 +54,91 @@ body{
     margin-top:20px;
     display:flex;
     flex-wrap:wrap;
-    gap:20px;
+    gap:25px;
     font-size:15px;
 }
 
 .contact a{
-    color:#fff;
+    color:white;
     text-decoration:none;
 }
 
-/* CONTENT */
+/* MAIN CONTENT */
 
 .content{
-    padding:40px 50px;
+    padding:45px 55px;
 }
 
 .section{
-    margin-bottom:35px;
+    margin-bottom:38px;
 }
 
 .section-title{
-    font-size:24px;
-    color:#1e3c72;
-    margin-bottom:18px;
-    position:relative;
+    color:#203a43;
+    font-size:26px;
+    margin-bottom:20px;
     padding-left:15px;
+    position:relative;
 }
 
 .section-title::before{
     content:'';
     position:absolute;
     left:0;
-    top:5px;
+    top:4px;
     width:5px;
-    height:28px;
-    background:#2a5298;
+    height:32px;
+    background:#2c5364;
     border-radius:10px;
 }
 
 /* SUMMARY */
 
-.summary p{
+.summary-box{
+    background:#f8fbff;
+    padding:25px;
+    border-radius:14px;
+    border-left:6px solid #2c5364;
+}
+
+.summary-box p{
+    margin-bottom:12px;
+}
+
+/* INFO GRID */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+.info-card{
+    background:#f7f9fc;
+    padding:18px;
+    border-radius:12px;
+    border-left:5px solid #2c5364;
+}
+
+.info-card h4{
     margin-bottom:10px;
+    color:#203a43;
 }
 
 /* SKILLS */
 
 .skills-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:16px;
 }
 
 .skill-card{
-    background:#f5f8fc;
-    padding:15px;
+    background:#f8fbff;
+    padding:18px;
     border-radius:12px;
-    border-left:5px solid #2a5298;
-    transition:0.3s ease;
+    border-left:5px solid #2c5364;
+    transition:0.3s;
 }
 
 .skill-card:hover{
@@ -122,16 +149,22 @@ body{
 /* EXPERIENCE */
 
 .job{
-    background:#f8fbff;
-    padding:22px;
-    border-radius:14px;
-    margin-bottom:18px;
-    border:1px solid #dce7f5;
+    background:#f9fbfd;
+    border:1px solid #dce6ef;
+    border-radius:16px;
+    padding:24px;
+    margin-bottom:24px;
 }
 
 .job h3{
-    color:#1e3c72;
-    margin-bottom:12px;
+    color:#203a43;
+    margin-bottom:6px;
+}
+
+.job h4{
+    color:#2c5364;
+    margin-bottom:15px;
+    font-weight:600;
 }
 
 .job ul{
@@ -142,25 +175,16 @@ body{
     margin-bottom:10px;
 }
 
-/* EDUCATION */
-
-.education-box{
-    background:#f5f8fc;
-    padding:20px;
-    border-radius:12px;
-    border-left:5px solid #2a5298;
-}
-
-/* LANGUAGES */
+/* LANGUAGE */
 
 .languages{
     display:flex;
-    gap:15px;
     flex-wrap:wrap;
+    gap:14px;
 }
 
 .language{
-    background:#2a5298;
+    background:#2c5364;
     color:white;
     padding:10px 18px;
     border-radius:30px;
@@ -173,8 +197,8 @@ body{
     background:#f2f5fa;
     text-align:center;
     padding:18px;
-    font-size:14px;
     color:#666;
+    font-size:14px;
 }
 
 /* RESPONSIVE */
@@ -202,6 +226,7 @@ body{
     <!-- HEADER -->
 
     <div class="header">
+
         <h1>Pritam Pal</h1>
         <h3>Designer – Control & Instrumentation</h3>
 
@@ -209,6 +234,7 @@ body{
             <div>📧 <a href="mailto:pritampal8927@gmail.com">pritampal8927@gmail.com</a></div>
             <div>📞 +91 89613 74818</div>
         </div>
+
     </div>
 
     <!-- CONTENT -->
@@ -217,46 +243,104 @@ body{
 
         <!-- SUMMARY -->
 
-        <div class="section summary">
+        <div class="section">
+
             <h2 class="section-title">Professional Summary</h2>
 
-            <p>
-                Experienced Control & Instrumentation Designer with 3 years of experience 
-                in EPCM projects across Oil & Gas, Chemical, Mining & Minerals industries.
-            </p>
+            <div class="summary-box">
 
-            <p>
-                Skilled in Front-End Engineering, Detailed Engineering, Instrumentation 
-                Layouts, Cable Routing, Hook-up Drawings, 3D Modelling, and 
-                Interdisciplinary Coordination.
-            </p>
+                <p>
+                    Control & Instrumentation Designer with 3 years of experience 
+                    at Wood India Engineering & Projects Pvt. Ltd.
+                </p>
+
+                <p>
+                    Experienced in Front End Engineering, Detailed Engineering 
+                    and EPCM projects across Oil & Gas, Chemical, Refinery, 
+                    Mining & Minerals industries.
+                </p>
+
+                <p>
+                    Skilled in Instrumentation Design, Hook-up Drawings, 
+                    Instrument Layouts, Cable Tray Routing, Junction Box Grouping, 
+                    Bulk Material Take-Offs, SP3D Modelling, Smart Sketch extraction, 
+                    and interdisciplinary coordination.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- KEY INFO -->
+
+        <div class="section">
+
+            <h2 class="section-title">Professional Information</h2>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <h4>Years of Experience</h4>
+                    <p>3 Years</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Industries</h4>
+                    <p>Oil & Gas, Chemical, Mining & Minerals</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Types of Facilities</h4>
+                    <p>Refineries, Mining Processing, DWST</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Areas of Expertise</h4>
+                    <p>Front End Engineering, Detailed Engineering, EPCM</p>
+                </div>
+
+            </div>
+
         </div>
 
         <!-- EDUCATION -->
 
         <div class="section">
+
             <h2 class="section-title">Education</h2>
 
-            <div class="education-box">
-                <h3>Diploma in Electronics & Telecommunication Engineering</h3>
-                <p>Ramakrishna Mission Shilpamandira, Belur Math, Howrah, India</p>
+            <div class="info-card">
+
+                <h4>Diploma in Electronics & Telecommunication Engineering</h4>
+
+                <p>
+                    Ramakrishna Mission Shilpamandira, Belur Math, Howrah, India
+                </p>
+
                 <p><strong>Result:</strong> First Class</p>
+
             </div>
+
         </div>
 
-        <!-- SKILLS -->
+        <!-- SOFTWARE -->
 
         <div class="section">
+
             <h2 class="section-title">Software & Skills</h2>
 
             <div class="skills-grid">
 
                 <div class="skill-card">
-                    SmartPlant 3D, Smart Sketch, SmartPlant Review
+                    Smart Plant 3D 2016 / 2019 & Smart Sketch
                 </div>
 
                 <div class="skill-card">
-                    SmartPlant Instrumentation (SPI)
+                    Smart Plant Review 2018
+                </div>
+
+                <div class="skill-card">
+                    Smart Plant Instrumentation (SPI) 2018
                 </div>
 
                 <div class="skill-card">
@@ -264,15 +348,27 @@ body{
                 </div>
 
                 <div class="skill-card">
-                    Navisworks Freedom & Simulate
+                    Navisworks Freedom 2022 / 2024
                 </div>
 
                 <div class="skill-card">
-                    AutoCAD 2D & 3D, MicroStation V8i
+                    Navisworks Simulate 2023 / 2024
                 </div>
 
                 <div class="skill-card">
-                    Bluebeam Revu, MS Office 365 Copilot
+                    AutoCAD 2022 / 2024 2D & 3D
+                </div>
+
+                <div class="skill-card">
+                    MicroStation V8i
+                </div>
+
+                <div class="skill-card">
+                    Bluebeam Revu 2024
+                </div>
+
+                <div class="skill-card">
+                    MS Office 365 Copilot
                 </div>
 
                 <div class="skill-card">
@@ -284,68 +380,124 @@ body{
                 </div>
 
             </div>
+
         </div>
 
         <!-- EXPERIENCE -->
 
         <div class="section">
+
             <h2 class="section-title">Professional Experience</h2>
 
             <div class="job">
+
                 <h3>Wood India Engineering & Projects Pvt. Ltd.</h3>
+                <h4>Designer – Control & Instrumentation</h4>
 
                 <ul>
 
                     <li>
-                        <strong>ADNOC HABSHAN DBN EPCm, Abu Dhabi</strong><br>
-                        Hook-up drawings, instrument layouts, trench routing, 
-                        bulk material take-offs.
+                        <strong>ADNOC HABSHAN DBN EPCm – Abu Dhabi, UAE</strong><br>
+                        Hook-up drawings, instrument location layouts, trench routing layouts, 
+                        bulk material take-offs for shutdown scope.
                     </li>
 
                     <li>
-                        <strong>ExxonMobil ANT BT6, Antwerp</strong><br>
-                        As-built instrumentation documentation, cable routing, 
-                        alarm layouts.
+                        <strong>ExxonMobil ANT BT6 Bundle of Projects – Antwerp</strong><br>
+                        As-built instrumentation design documents, F&G layouts, 
+                        cable routing layouts, alarm layouts, marshalling cabinet layouts.
                     </li>
 
                     <li>
-                        <strong>OMV Petrom SAF HVO, Romania</strong><br>
-                        Cable tray routing, hook-up drawings, JB wiring diagrams, 
-                        interdisciplinary reviews.
+                        <strong>OMV Petrom SAF HVO Project – Romania</strong><br>
+                        SP3D cable tray routing, offline instrument modelling, 
+                        JB wiring diagrams, Smart Sketch extraction, 
+                        interdisciplinary reviews and equipment accessibility verification.
                     </li>
 
                     <li>
-                        <strong>HRRL DWST Package-7A, India</strong><br>
-                        Instrument modelling, F&G layouts, hook-up drawings, 
-                        cable schedules, BOM generation.
+                        <strong>HRRL DWST Package-7A – Rajasthan, India</strong><br>
+                        Instrument modelling, JB grouping, SPI wiring, 
+                        F&G layouts, hook-up drawings, cable schedules, 
+                        BOM generation, model reviews and bulk MTO preparation.
                     </li>
 
                     <li>
-                        <strong>EVONIK SIS Project, Singapore</strong><br>
-                        Instrumentation deliverables, JB grouping, 
-                        bulk material take-offs.
+                        <strong>EVONIK OIL ADDITIVES SIS Project – Singapore</strong><br>
+                        Instrumentation deliverables, JB grouping, instrument location layouts, 
+                        hook-up drawings and bulk material take-offs.
                     </li>
 
                     <li>
-                        Worked on additional EPCm projects across Portugal, 
-                        Uzbekistan, and Belgium.
+                        <strong>ADNOC Project 5.0 Define Stage</strong><br>
+                        Telecom cable tray routing layout drafting.
                     </li>
 
                 </ul>
 
             </div>
+
+            <div class="job">
+
+                <h3>Wood India Engineering & Projects Pvt. Ltd.</h3>
+                <h4>Diploma Engineer Trainee – Control & Instrumentation</h4>
+
+                <ul>
+
+                    <li>
+                        <strong>INEOS Project One – Antwerp, Belgium</strong><br>
+                        JB grouping checks, cable schedules, analyser layouts, 
+                        telecom location plans, PA schematics and FO cable routing layouts.
+                    </li>
+
+                    <li>
+                        <strong>Bondalti FEED H2 Enable Project – Portugal</strong><br>
+                        Instrument cable tray volume modelling and process hookup drawings.
+                    </li>
+
+                    <li>
+                        <strong>Almalyk Copper Processing Plant – Uzbekistan</strong><br>
+                        Instrument index checking with P&ID.
+                    </li>
+
+                    <li>
+                        <strong>Geismar Improvement & Expansion Project</strong><br>
+                        Instrument location plan and cable schedule checking.
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
 
         <!-- LANGUAGES -->
 
         <div class="section">
+
             <h2 class="section-title">Languages</h2>
 
             <div class="languages">
+
                 <div class="language">English</div>
                 <div class="language">Bengali</div>
                 <div class="language">Hindi</div>
+
             </div>
+
+        </div>
+
+        <!-- PROFESSIONAL HISTORY -->
+
+        <div class="section">
+
+            <h2 class="section-title">Professional History</h2>
+
+            <div class="info-card">
+                <p><strong>Wood India Engineering & Projects Pvt. Ltd.</strong></p>
+                <p>August 2023 – Present</p>
+            </div>
+
         </div>
 
     </div>
@@ -360,4 +512,3 @@ body{
 
 </body>
 </html>
-```
